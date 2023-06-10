@@ -1,0 +1,27 @@
+{
+  "name": "utelecomim-crmconnector",
+  "version": "1.0.2",
+  "description": "Utelecom API Connector",
+  "main": "library.js",
+  "scripts": {
+    "build": "babel library.js --out-file library.min.js && terser library.min.js -o library.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utgMarketing/utelecomim-crmconnector.git"
+  },
+  "keywords": [
+    "utelecom"
+  ],
+  "author": "Mando",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/utgMarketing/utelecomim-crmconnector/issues"
+  },
+  "homepage": "https://github.com/utgMarketing/utelecomim-crmconnector#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "terser": "^5.17.7"
+  }
+}
