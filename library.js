@@ -23,6 +23,7 @@
             this.utmMedium = "";
             this.utmTerm = "";
             this.utmContent = "";
+            this.trademarkId = null
         }
 
         setTitle(title) {
@@ -85,6 +86,11 @@
             return this;
         }
 
+        setTrademarkId(trademarkId) {
+            this.trademarkId = trademarkId;
+            return this;
+        }
+
         send() {
             return new Promise((resolve, reject) => {
                 if (!this.title || !this.description || !this.phone) {
@@ -105,6 +111,7 @@
                     utm_medium: this.utmMedium,
                     utm_term: this.utmTerm,
                     utm_content: this.utmContent,
+                    trademark_id: this.trademarkId,
                 };
 
                 const requestOptions = {

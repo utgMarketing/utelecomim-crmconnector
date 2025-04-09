@@ -34,6 +34,7 @@ connector
     .setUtmMedium("....")
     .setUtmTerm("....")
     .setUtmContent("....")
+    .setTrademarkId(123)
     .send()
     .then(({code, message}) => {
         console.log(code, message)
