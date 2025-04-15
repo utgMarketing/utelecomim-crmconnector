@@ -8,7 +8,7 @@ npm i utelecomim-crmconnector
 # CDN
 
 ```js
-<script src="https://cdn.jsdelivr.net/gh/utgMarketing/utelecomim-crmconnector@1.0.4/library.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/utgMarketing/utelecomim-crmconnector@1.0.6/library.min.js"></script>
 ```
 
 # Usage
@@ -16,10 +16,24 @@ npm i utelecomim-crmconnector
 
 import CrmConnector from "utelecomim-crmconnector";
 
-window.CrmConnector // with CDN
+// коли підключаємо через CDN
+window.CrmConnector
+    
+// базове використання
+const connector = new CrmConnector("https://api.doamin.com");
 
-const options = { timeout: 10000, headers: {} };
-const connector = new CrmConnector("https://api.doamin.com", options);
+// можна передати параметри
+const connector = new CrmConnector("https://api.doamin.com", { 
+    timeout: 10000, 
+    headers: {} 
+});
+
+// для тестування, щоб не створювати лід в CRM, вказуємо цей заголовок
+const connector = new CrmConnector("https://api.doamin.com", {
+    headers: {
+        "X-Mock-Response": "no-create"
+    } 
+});
 
 connector
     .setTitle("title") // required
