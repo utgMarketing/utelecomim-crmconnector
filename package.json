@@ -1,6 +1,6 @@
 {
   "name": "utelecomim-crmconnector",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Utelecom API Connector",
   "main": "library.js",
   "scripts": {

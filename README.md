@@ -8,7 +8,7 @@ npm i utelecomim-crmconnector
 # CDN
 
 ```js
-<script src="https://cdn.jsdelivr.net/gh/utgMarketing/utelecomim-crmconnector@1.0.6/library.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/utgMarketing/utelecomim-crmconnector@1.0.7/library.min.js"></script>
 ```
 
 # Usage
